@@ -61,7 +61,7 @@ d3.json(queryUrl, function(data) {
   }
   
 
-
+// creating pop ups
   L.geoJson(data, {
 
     pointToLayer: function(feature, latlng) {
@@ -88,7 +88,7 @@ d3.json(queryUrl, function(data) {
 
     for (var i = 0; i<grades.length; i++) {
       div.innerHTML +=
-      "<i style='background: " + colors[i] + "></i> " +
+      "<i style='background: " + colors[i] + "'></i> " +
       grades[i] + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
     }
     return div;
